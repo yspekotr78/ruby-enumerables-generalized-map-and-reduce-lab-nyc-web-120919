@@ -1,9 +1,9 @@
 # Your Code Here
-def map_to_negativize(array)
+def map(array)
   array.map { |element| element * -1 }
 end
 
-def map_to_no_change(array)
+def map(array)
   array
 end
 
