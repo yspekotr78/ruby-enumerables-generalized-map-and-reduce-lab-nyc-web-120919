@@ -5,4 +5,4 @@ def map(source_array)
  # new_source
 end
 
-map(source_array){ |x| -x }
+map{ |x| -x }
