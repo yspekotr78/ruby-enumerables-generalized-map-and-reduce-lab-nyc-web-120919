@@ -4,6 +4,6 @@ def map_to_no_change(array)
 end
 
 def map(array)
-  array.map { |x| -x }
+  array.map { |x| x*-1 }
 end
 
