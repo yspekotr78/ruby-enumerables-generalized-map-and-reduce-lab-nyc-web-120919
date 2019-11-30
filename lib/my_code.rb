@@ -3,7 +3,7 @@
 
 
 def map_to_negativize(array)
-  array.map_to_negativize{ |element| element * -1 }
+  array.map { |element| element * -1 }
 end
 
 def map_to_no_change(array)
