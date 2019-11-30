@@ -10,12 +10,15 @@ def map(array)
   p new_arr
 end
 
-
-#def map(source_array)
-#  index = 0 
-#  source_array.each do |number|
-#   source_array[index] = yield(number)
-#    index += 1 
-#  end
-#  source_array
-#end 
+def reduce(array, startingValue = 0)
+  counter = 0
+  while counter < array.length do
+    startingValue = yield(array[counter], startingValue)
+    counter += 1
+  end
+  if !startingValue
+    return false
+  else
+    startingValue
+  end
+end
