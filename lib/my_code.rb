@@ -10,15 +10,15 @@ def map(array)
   p new_arr
 end
 
-def reduce(array, startingValue = 0)
+def reduce(array, starting_point = 0)
   counter = 0
   while counter < array.length do
-    startingValue = yield(array[counter], startingValue)
+    starting_point = yield(array[counter], starting_point)
     counter += 1
   end
-  if !startingValue
+  if !starting_point
     return false
   else
-    startingValue
+    starting_point
   end
 end
