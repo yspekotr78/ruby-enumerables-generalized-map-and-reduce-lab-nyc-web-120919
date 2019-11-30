@@ -1,8 +1,9 @@
 # Your Code Here
-def map(source_array)
-  yield source_array
-#  new_source = source_array.map { |x| -x }
- # new_source
+def map_to_no_change(array)
+  array
 end
 
-map{ |x| -x }
+def map(array)
+  array.map { |x| -x }
+end
+
