@@ -2,7 +2,7 @@
 def map(array)
   p array
   new_arr = []
-  i = 0
+  i = 0          #yield keyword executes the block passed into the method. When               it is executed, it can be passed arguments.
   while i < array.length
     new_arr << yield(array[i])
     i += 1
